@@ -17,6 +17,10 @@ ul {
   margin-right: 0;
 }
 
+main {
+  text-align: center;
+}
+
 /* GENERAL SETTINGS*/
 .container {
   max-width: 1200px;
@@ -74,6 +78,7 @@ body {
 }
 
 /* HEADER-COMMON */
+
 .header {
   color: var(--brand-background-white);
   border-bottom: 1px solid #ececec;
@@ -157,10 +162,13 @@ body {
   line-height: 1.2;
   font-weight: 700;
   padding-bottom: 50px;
-  text-align: center;
 }
 
 /* Section main*/
+
+.main {
+  align-items: center;
+}
 
 .box {
   display: flex;
@@ -169,9 +177,7 @@ body {
 
 .top-background {
   background-color: var(--brand-background-dark);
-  text-align: center;
   height: 600px;
-  align-items: center;
 }
 
 .top-title {
@@ -181,7 +187,6 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   padding-top: 200px;
   padding-bottom: 30px;
 }
@@ -200,6 +205,7 @@ body {
   cursor: pointer;
   border: none;
 }
+
 .top-button:is(:hover, :focus, :active) {
   color: var(--brand-color-blue);
   background-color: var(--brand-color-white);
@@ -220,23 +226,23 @@ body {
   color: var(--brand-color-grey);
 }
 
+.content-list {
+  text-align: start;
+}
 /* Seion range of activities */
 
 .secondary-title {
-  text-align: center;
   color: var(--brand-color-black);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
 }
 .photo-list-primary {
-  text-align: center;
 }
 
 /* Section team */
 .team-background {
   background-color: var(--brand-background-light);
-  text-align: center;
 }
 
 .team-card {
@@ -286,14 +292,13 @@ body {
 .button-list {
   display: flex;
   column-gap: 8px;
-  text-align: center;
   justify-content: center;
 }
 
 .menu {
   padding-bottom: 34px;
-  }
-   
+}
+
 .photo-title {
   font-weight: 700;
   font-size: 18px;
@@ -311,8 +316,6 @@ body {
 .photo-border {
   border: var(--photo-backround-white);
 }
-
-
 
 /* FOOTER-COMMON*/
 
