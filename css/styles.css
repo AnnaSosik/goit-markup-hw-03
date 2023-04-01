@@ -48,6 +48,7 @@ ul {
 .grid-item {
   flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
     var(--element-in-row);
+  border: 1px solid #eeeeee;
 }
 
 /* MAIN COLORS-COMMON*/
@@ -156,7 +157,7 @@ body {
   line-height: 1.2;
   font-weight: 700;
   padding-bottom: 50px;
-  text-align: center; 
+  text-align: center;
 }
 
 /* Section main*/
@@ -282,6 +283,17 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.button-list {
+  display: flex;
+  column-gap: 8px;
+  text-align: center;
+  justify-content: center;
+}
+
+.menu {
+  padding-bottom: 34px;
+  }
+   
 .photo-title {
   font-weight: 700;
   font-size: 18px;
@@ -299,6 +311,8 @@ body {
 .photo-border {
   border: var(--photo-backround-white);
 }
+
+
 
 /* FOOTER-COMMON*/
 
