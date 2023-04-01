@@ -1,4 +1,5 @@
 /* TAG SELECTORS STYLES RESET */
+
 p,
 ul,
 h1,
@@ -22,6 +23,7 @@ main {
 }
 
 /* GENERAL SETTINGS*/
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -34,26 +36,6 @@ main {
   padding-top: 94px;
 }
 
-/*GRID-PORTFOLIO*/
-
-:root {
-  --gap: 30px;
-  --element-in-row: 3;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-  justify-items: center;
-  align-items: center;
-}
-
-.grid-item {
-  flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
-    var(--element-in-row);
-  border: 1px solid #eeeeee;
-}
 
 /* MAIN COLORS-COMMON*/
 
@@ -70,12 +52,14 @@ main {
   --photo-backround-white: #eeeeee;
 }
 
+
 /* BODY-COMMON */
 
 body {
   font-family: "Roboto", sans-serif;
   color: var(--brand-color-black);
 }
+
 
 /* HEADER-COMMON */
 
@@ -156,6 +140,8 @@ body {
 .phone {
   margin-left: 50px;
 }
+
+
 /*INDEX.HTML*/
 
 .section-title {
@@ -164,6 +150,7 @@ body {
   font-weight: 700;
   padding-bottom: 50px;
 }
+
 
 /* Section main*/
 
@@ -230,6 +217,8 @@ body {
 .content-list {
   text-align: start;
 }
+
+
 /* Seion range of activities */
 
 .secondary-title {
@@ -241,7 +230,9 @@ body {
 .photo-list-primary {
 }
 
+
 /* Section team */
+
 .team-background {
   background-color: var(--brand-background-light);
 }
@@ -269,7 +260,29 @@ body {
   letter-spacing: 0.03em;
 }
 
+
 /* PORTFOLIO.HTML*/
+
+/*GRID*/
+
+:root {
+  --gap: 30px;
+  --element-in-row: 3;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item {
+  flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
+    var(--element-in-row);
+  border: 1px solid #eeeeee;
+}
 
 .filter-button {
   background-color: var(--brand-background-light);
@@ -318,16 +331,14 @@ body {
   border: var(--photo-backround-white);
 }
 
+
 /* FOOTER-COMMON*/
-
-
 
 .footer {
   background-color: var(--brand-background-dark);
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  
 }
 
 .footer .logo {
