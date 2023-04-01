@@ -82,6 +82,7 @@ body {
 .header {
   color: var(--brand-background-white);
   border-bottom: 1px solid #ececec;
+  height: 80px;
 }
 
 .header .container {
@@ -319,10 +320,14 @@ body {
 
 /* FOOTER-COMMON*/
 
+
+
 .footer {
   background-color: var(--brand-background-dark);
+  align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  
 }
 
 .footer .logo {
@@ -351,10 +356,10 @@ body {
   display: block;
 }
 
-.footer .address a {
-  padding-top: 9px;
-}
-
 .footer .address span {
   padding-top: 20px;
+}
+
+address a {
+  padding-top: 9px;
 }
