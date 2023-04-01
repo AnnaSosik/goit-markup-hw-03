@@ -109,11 +109,11 @@ body {
   align-items: center;
 }
 
-.nav-list-item:not(:last-child) {
+.nav-list li:not(:last-child) {
   margin-right: 46px;
 }
 
-.nav-list-item {
+.nav-list li {
   padding-top: 32px;
   padding-bottom: 32px;
 }
