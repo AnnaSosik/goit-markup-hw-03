@@ -227,8 +227,7 @@ body {
   font-size: 36px;
   line-height: 1.2;
 }
-.photo-list-primary {
-}
+
 
 
 /* Section team */
@@ -343,6 +342,7 @@ body {
 
 .footer .logo {
   color: var(--brand-color-white);
+  
 }
 
 .footer-address {
@@ -363,14 +363,9 @@ body {
   color: var(--brand-color-blue);
 }
 
-.block {
-  display: block;
-}
-
-.footer .address span {
+.address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
   padding-top: 20px;
-}
-
-address a {
-  padding-top: 9px;
 }
