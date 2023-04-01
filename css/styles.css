@@ -97,11 +97,11 @@ body {
 
 .logo-color {
   color: var(--brand-color-blue);
-} 
+}
 
-.nav { 
-    display: flex; 
-    align-items: center;
+.nav {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -152,20 +152,19 @@ body {
 }
 /*INDEX.HTML*/
 
-
 .section-title {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
 }
 
-/* Section main*/ 
+/* Section main*/
 
 .box {
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-  }
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
 
 .top-background {
   background-color: var(--brand-background-dark);
@@ -294,10 +293,13 @@ body {
   border: var(--photo-backround-white);
 }
 
-/* FOOTER-COMMON*/
+/* FOOTER-COMMON*/ 
+
+
 
 .footer {
   background-color: var(--brand-background-dark);
+ 
 }
 
 .footer .logo {
@@ -320,4 +322,9 @@ body {
 
 .footer .address-link:is(:hover, :focus, :active) {
   color: var(--brand-color-blue);
+}
+
+
+.address {
+    display: block;
 }

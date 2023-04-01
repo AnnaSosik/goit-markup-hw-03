@@ -1,1 +1,1 @@
-https://github.com/Anna-Prokop/goit-markup-hw-03.git
+https://annasosik.github.io/goit-markup-hw-03/
