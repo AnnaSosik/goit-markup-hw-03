@@ -74,7 +74,6 @@ body {
 
 /* HEADER-COMMON */
 .header {
-  height: 80px;
   color: var(--brand-background-white);
   border-bottom: 1px solid #ececec;
 }
@@ -156,19 +155,22 @@ body {
   font-size: 36px;
   line-height: 1.2;
   font-weight: 700;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 /* Section main*/
 
 .box {
   display: flex;
-  text-align: center;
   justify-content: space-between;
 }
 
 .top-background {
   background-color: var(--brand-background-dark);
   text-align: center;
+  height: 600px;
+  align-items: center;
 }
 
 .top-title {
@@ -179,6 +181,8 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 
 .top-button {
@@ -195,7 +199,6 @@ body {
   cursor: pointer;
   border: none;
 }
-
 .top-button:is(:hover, :focus, :active) {
   color: var(--brand-color-blue);
   background-color: var(--brand-color-white);
@@ -240,12 +243,16 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 368px;
 }
 
 .team-title {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team-text {
@@ -293,13 +300,12 @@ body {
   border: var(--photo-backround-white);
 }
 
-/* FOOTER-COMMON*/ 
-
-
+/* FOOTER-COMMON*/
 
 .footer {
   background-color: var(--brand-background-dark);
- 
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
@@ -324,7 +330,14 @@ body {
   color: var(--brand-color-blue);
 }
 
+.block {
+  display: block;
+}
 
-.address {
-    display: block;
+.footer .address a {
+  padding-top: 9px;
+}
+
+.footer .address span {
+  padding-top: 20px;
 }
