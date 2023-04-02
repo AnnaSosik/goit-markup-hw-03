@@ -10,16 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="nav">
+      <div class="container head">
           <a class="logo" href="index.html" title="Strona główna"
             ><span class="logo-color">Web</span>Studio</a
           >
-          <ul class="nav-list">
+          <nav class="nav">
+          <ul class="nav-list list">
             <li>
               <a class="nav-link" href="index.html">Agencja</a>
             </li>
@@ -30,14 +30,16 @@
               <a class="nav-link" href="#">Kontakt</a>
             </li>
           </ul>
-        </nav>
-        <a class="contact-link mail" href="mailto:info@devstudio.com"
-          >info@devstudio.com</a
+          </nav>
+          <ul class="contact-list list">
+        <li class="contact-item"><a class="contact-link mail" href="mailto:info@devstudio.com"
+          >info@devstudio.com</a></li
         >
-        <a class="contact-link phone" href="tel:48111111111">+48 111 111 111</a>
+        <li class="contact-item"><a class="contact-link phone" href="tel:48111111111">+48 111 111 111</a></li>
+      </ul>
       </div>
     </header>
-    <main class="main">
+    <main>
       <section class="section top-background">
         <div class="container">
           <h1 class="top-title">EFEKTYWNE ROZWIĄZANIA<br>DLA WASZEGO BIZNESU</h1>
@@ -46,7 +48,7 @@
       </section>
       <section class="section content-list">
         <div class="container">
-          <ul class= "box">
+          <ul class= "box list">
             <li>
               <h3 class="content-title">lorem ipsum</h3>
               <p class="content-text">
@@ -78,11 +80,11 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section job">
         <div class="container">
           <h2 class="section-title">Czym się zajmujemy</h2>
-          <ul class="box">
-            <li>
+          <ul class="job-list list">
+            <li class="job-item">
               <img
                 src="images/keyboard.jpg"
                 alt="picture shows hands typing on a keyboard"
@@ -90,7 +92,7 @@
                 height="294px"
               />
             </li>
-            <li>
+            <li class="job-item">
               <img
                 src="images/notebook.jpg"
                 alt="picture shows hand holding a mobile phone over laptop keyborad"
@@ -98,7 +100,7 @@
                 height="294px"
               />
             </li>
-            <li>
+            <li class="job-item">
               <img
                 src="images/tablet.jpg"
                 alt="hand holding a tablet over computer keyboard"
@@ -112,10 +114,10 @@
       <section class="section team-background">
         <div class="container">
           <h2 class="section-title">Nasz zespół</h2>
-          <ul class="box">
+          <ul class="team-list list">
             <li class="team-card">
               <figure>
-                <img
+                <img class="team-img"
                   src="images/product-designer.jpg"
                   alt="man in red shirt with glasses"
                   width="270px"
@@ -129,7 +131,7 @@
             </li>
             <li class="team-card">
               <figure>
-                <img
+                <img class="team-img"
                   src="images/frontened-developer.jpg"
                   alt="woman with long blond hair with glasses"
                   width="270px"
@@ -143,7 +145,7 @@
             </li>
             <li class="team-card">
               <figure>
-                <img
+                <img class="team-img"
                   src="images/marketing-specialist.jpg"
                   alt="man in blue shirt with short brown hair"
                   width="270px"
@@ -157,7 +159,7 @@
             </li>
             <li class="team-card">
               <figure>
-                <img
+                <img class="team-img"
                   src="images/ui-designer.jpg"
                   alt="man in black shirt with glasses"
                   width="270px"
@@ -175,20 +177,19 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo" href="index.html" title="Strona główna"
-          ><span class="logo-color">Web</span>Studio</a
+        <a class="logo-footer" href="index.html" title="Strona główna"
+          ><span class="logo-color">Web</span>Studio</a>
         > 
+        <address class="footer-contact">
+          <ul class="footer-contact-list list">
+          <li class="footer-contact-item"><a class="footer-address"
+            >m. Warszawa, Aleje Jerozolimskie 21</a></li>
+          <li class="footer-contact-item"><a class="address-link" href="mailto:info@example.com">
+        info@example.com</a></li>
+          <li><a class="address-link" href="tel:48111111111">+48 111 111 111</a></li> 
+        </ul>
+        </address> 
       </div>
-      <div class="container">
-        <address class="address">
-          <span class="footer-address"
-            >m. Warszawa, Aleje Jerozolimskie 21</span>
-          <a class="address-link" href="mailto:info@example.com"
-            >info@example.com</a
-          >
-          <a class="address-link" href="tel:48111111111">+48 111 111 111</a>
-        </div>
-        </address>
     </footer>
   </body>
 </html>
