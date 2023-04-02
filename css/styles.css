@@ -29,7 +29,8 @@ main {
 }
 
 .section {
-  padding: 94px, 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -168,7 +169,6 @@ body {
 .top-background {
   background-color: var(--brand-background-dark);
   height: 600px;
-  padding: 200px 0;
   text-align: center;
 }
 
@@ -184,7 +184,10 @@ body {
   margin: 0px auto;
   margin-bottom: 30px;
 }
-
+.title { 
+  padding-top: 200px;
+  padding-bottom:200px;
+}
 .top-button {
   font-family: var(--main-font);
   color: var(--brand-color-white);
@@ -208,12 +211,12 @@ body {
   background-color: var(--brand-color-white);
 }
 
-.section-title {
+.secondary-title {
   font-family: var(--main-font);
   color: var(--brand-color-black);
   font-weight: 700;
   font-size: 36px;
-  line-height:1.16;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
@@ -241,7 +244,10 @@ body {
 
 .content-list {
   text-align: start;
-  padding: 94px 0;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .job {
@@ -263,8 +269,6 @@ body {
 
 .team-background {
   background-color: var(--brand-background-light);
-  height: 648px;
-  padding: 94px;
 }
 
 .team-card {
@@ -274,6 +278,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   height: 368px;
+  
 }
 
 .team-title {
@@ -327,18 +332,22 @@ body {
 .grid-item {
   flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
     var(--element-in-row);
-  border: 1px solid #eeeeee;
 }
 
 .filter-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+
+  font-family: var(--main-font);
   background-color: var(--brand-background-light);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  height: 38px;
+
   letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -350,16 +359,15 @@ body {
 }
 
 .button-list {
+  flex-wrap: wrap;
   display: flex;
   column-gap: 8px;
   justify-content: center;
-}
-
-.menu {
-  padding-bottom: 34px;
+  padding-bottom: 50px;
 }
 
 .photo-title {
+  font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -367,14 +375,31 @@ body {
 }
 
 .photo-description {
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--brand-color-grey);
 }
 
+.no-gap {
+  display: block;
+}
+
 .photo-border {
-  border: var(--photo-backround-white);
+  background-color: var(--brand-background-white);
+  border: 1px solid #eeeeee;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
 /* FOOTER-COMMON*/
