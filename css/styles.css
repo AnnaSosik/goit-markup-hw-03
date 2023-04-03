@@ -69,14 +69,6 @@ body {
 
 /* HEADER-COMMON */
 
-.secion-title {
-  font-family: var(--main-font);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
 
 .header {
   color: var(--brand-background-white);
