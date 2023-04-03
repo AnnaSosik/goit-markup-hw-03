@@ -40,6 +40,8 @@ main {
 /* MAIN COLORS-COMMON*/
 
 :root {
+  /* Grid */
+    --element-in-row: 3;
   /* Font */
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -317,7 +319,6 @@ body {
 /*GRID*/
 
 :root {
-  --gap: 30px;
   --element-in-row: 3;
 }
 
@@ -327,12 +328,19 @@ body {
   gap: var(--gap);
   justify-items: center;
   align-items: center;
+  gap: 30px;
 }
 
 .grid-item {
   flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
     var(--element-in-row);
 }
+
+
+
+
+
+
 
 .filter-button {
   padding: 6px 22px;
@@ -391,8 +399,9 @@ body {
   border: 1px solid #eeeeee;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-top:20px;
+  text-align:start;
 }
 
 .photos {
