@@ -171,7 +171,9 @@ body {
 .top-background {
   background-color: var(--brand-background-dark);
   height: 600px;
-  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
 }
 
 .top-title {
@@ -186,10 +188,7 @@ body {
   margin: 0px auto;
   margin-bottom: 30px;
 }
-.title { 
-  padding-top: 200px;
-  padding-bottom:200px;
-}
+
 .top-button {
   font-family: var(--main-font);
   color: var(--brand-color-white);
@@ -206,6 +205,7 @@ body {
   border: none;
   padding: 10px 42px;
   border-radius: 4px;
+
 }
 
 .top-button:is(:hover, :focus) {
@@ -335,8 +335,6 @@ body {
   flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
     var(--element-in-row);
 }
-
-
 
 
 
