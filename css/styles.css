@@ -37,11 +37,12 @@ main {
   list-style: none;
 }
 
-/* MAIN COLORS-COMMON*/
+/*COMMON*/
 
 :root {
+
   /* Grid */
-    --element-in-row: 3;
+  --element-in-row: 3;
   /* Font */
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -69,14 +70,17 @@ body {
 
 /* HEADER-COMMON */
 
-
 .header {
   color: var(--brand-background-white);
+  padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
 }
 
 .head {
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -88,7 +92,6 @@ body {
   text-decoration: none;
   color: #000;
   margin-right: 93px;
-  padding: 25px 0;
 }
 
 .logo-color {
@@ -98,7 +101,6 @@ body {
 .nav-list,
 .contact-list {
   display: flex;
-  padding: 32px 0;
 }
 
 .nav-list {
@@ -119,7 +121,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
-  padding: 32px 0;
 }
 
 .nav-link:is(:hover, :focus, ) {
@@ -129,13 +130,11 @@ body {
 .nav-list,
 .contact-list {
   display: flex;
-  padding: 32px 0;
 }
 
 .contact-link {
   font-family: var(--main-font);
   color: var(--brand-color-grey);
-  padding: 32px 0;
   font-size: 14px;
   line-height: 1.1;
   font-weight: 500;
@@ -145,10 +144,6 @@ body {
 
 .contact-link:is(:hover, :focus, ) {
   color: var(--brand-color-blue);
-}
-
-.phone {
-  margin-left: 50px;
 }
 
 /*INDEX.HTML*/
@@ -162,27 +157,23 @@ body {
 
 .top-background {
   background-color: var(--brand-background-dark);
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  
 }
 
 .top-title {
-  font-family: var(--main-font);
   width: 696px;
   color: var(--brand-color-white);
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0px auto;
   margin-bottom: 30px;
+  line-height: 1.3636;
 }
 
 .top-button {
-  font-family: var(--main-font);
   color: var(--brand-color-white);
   background-color: var(--brand-color-blue);
   font-style: normal;
@@ -197,7 +188,6 @@ body {
   border: none;
   padding: 10px 42px;
   border-radius: 4px;
-
 }
 
 .top-button:is(:hover, :focus) {
@@ -206,7 +196,6 @@ body {
 }
 
 .secondary-title {
-  font-family: var(--main-font);
   color: var(--brand-color-black);
   font-weight: 700;
   font-size: 36px;
@@ -219,7 +208,6 @@ body {
 /* Section content list*/
 
 .content-title {
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -228,7 +216,6 @@ body {
 }
 
 .content-text {
-  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.7;
   color: var(--brand-color-grey);
@@ -240,18 +227,15 @@ body {
   text-align: start;
   gap: 30px;
   flex-wrap: wrap;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .job {
-  padding: 0px;
+  padding-top: 0;
 }
 
 .job-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 .job-item {
@@ -272,11 +256,9 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   height: 368px;
-  
 }
 
 .team-title {
-  font-family: var(--main-font);
   color: var(--brand-color-black);
   font-weight: 500;
   line-height: 1.2;
@@ -286,7 +268,6 @@ body {
 }
 
 .team-text {
-  font-family: var(--main-font);
   color: var(--brand-color-grey);
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -310,27 +291,17 @@ body {
 
 /*GRID*/
 
-:root {
-  --element-in-row: 3;
-}
-
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-  justify-items: center;
   align-items: center;
   gap: 30px;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .grid-item {
   flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
     var(--element-in-row);
 }
-
-
-
-
 
 .filter-button {
   padding: 6px 22px;
@@ -390,13 +361,8 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
-  padding-top:20px;
-  text-align:start;
-}
-
-.photos {
-  display: flex;
-  flex-wrap: wrap;
+  padding-top: 20px;
+  text-align: start;
 }
 
 /* FOOTER-COMMON*/
